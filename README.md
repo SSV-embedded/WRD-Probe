@@ -456,10 +456,10 @@ There is no user interaction with the WRD/Probe.
 
 | LED STATUS | MEANING |
 | --- | --- |
-| <img src="assets/status_led_purple.svg" alt="PURPLE" width="16"> **PURPLE > Slowly pulsating** | The WRD/Probe boots up and connects to the mobile network. |
-| <img src="assets/status_led_red.svg" alt="RED" width="16"> **RED > 4x rapid flashing** |  Connection to the mobile network could not be established. The WRD/Probe will try again at a later time. |
-| <img src="assets/status_led_blue.svg" alt="GREEN" width="16"> **BLUE > Flash once** | TX or RX with the mobile network. |
-| <img src="assets/status_led_purple.svg" alt="BLUE" width="16"> **PURPLE > Rapidly pulsating** | The WRD/Probe performs an update that was started by the WRD/Client. The WRD/Probe must not be switched off in this state! |
+| <img src="assets/status_led_purple.svg" alt="PURPLE" width="16"> **PURPLE </br> Slowly&nbsp;pulsating** | The WRD/Probe boots up and connects to the mobile network. |
+| <img src="assets/status_led_red.svg" alt="RED" width="16"> **RED </br> 4x&nbsp;rapid&nbsp;flashing** |  Connection to the mobile network could not be established. The WRD/Probe will try again at a later time. |
+| <img src="assets/status_led_blue.svg" alt="GREEN" width="16"> **BLUE </br> Flash&nbsp;once** | TX or RX with the mobile network. |
+| <img src="assets/status_led_purple.svg" alt="BLUE" width="16"> **PURPLE </br> Rapidly&nbsp;pulsating** | The WRD/Probe performs an update that was started by the WRD/Client. The WRD/Probe must not be switched off in this state! |
 
 *Table 1: Meaning of the LED states in normal mode*
 
@@ -469,9 +469,9 @@ The WRD/Probe is charged via the USB-C interface.
 
 | LED STATUS | MEANING |
 | --- | --- |
-| <img src="assets/status_led_green.svg" alt="CYAN" width="16"> **GREEN > Slowly pulsating** |  The WRD/Probe is being charged. |
-| <img src="assets/status_led_green.svg" alt="YELLOW" width="16"> **GREEN > Shine permanently** | The WRD/Probe is fully charged. The USB-C cable can be unplugged. |
-| <img src="assets/status_led_red.svg" alt="GREEN" width="16"> **RED > Slowly pulsating** | The WRD/Probe cannot be charged. The power switch is off or the battery is defective. |
+| <img src="assets/status_led_green.svg" alt="CYAN" width="16"> **GREEN </br> Slowly&nbsp;pulsating** |  The WRD/Probe is being charged. |
+| <img src="assets/status_led_green.svg" alt="YELLOW" width="16"> **GREEN </br> Shine&nbsp;permanently** | The WRD/Probe is fully charged. The USB-C cable can be unplugged. |
+| <img src="assets/status_led_red.svg" alt="GREEN" width="16"> **RED </br> Slowly&nbsp;pulsating** | The WRD/Probe cannot be charged. The power switch is off or the battery is defective. |
 
 *Table 2: Meaning of the LED states in charging mode*
 
@@ -481,10 +481,10 @@ The `user` button was pressed for 4 seconds.
 
 | LED STATUS | MEANING |
 | --- | --- |
-| <img src="assets/status_led_cyan.svg" alt="BLUE" width="16"> **CYAN > Slowly pulsating** | The WRD/Probe searches for a flicker code. Hold the WRD/Probe with the photo transistor against the flicker code field on the screen. |
-| <img src="assets/status_led_cyan.svg" alt="GREEN" width="16"> **CYAN > Rapidly pulsating** | The WRD/Probe reads the flicker code. Keep the WRD/Probe on the field with the flicker code. Hold the WRD/Probe still and make sure that the screen brightness does not change. |
-| <img src="assets/status_led_green.svg" alt="GREEN" width="16"> **GREEN > 4x rapid flashing** | The pairing was successful. You can remove the WRD/Probe from the flicker code field and complete the pairing in the WRD/Client. |
-| <img src="assets/status_led_red.svg" alt="PURPLE" width="16"> **RED > 4x rapid flashing** | The pairing has failed. You can try again by pressing and holding the `user` button for 4 seconds. If the pairing fails several times, please try using a different PC for the pairing. |
+| <img src="assets/status_led_cyan.svg" alt="BLUE" width="16"> **CYAN </br> Slowly&nbsp;pulsating** | The WRD/Probe searches for a flicker code. Hold the WRD/Probe with the photo transistor against the flicker code field on the screen. |
+| <img src="assets/status_led_cyan.svg" alt="GREEN" width="16"> **CYAN </br> Rapidly&nbsp;pulsating** | The WRD/Probe reads the flicker code. Keep the WRD/Probe on the field with the flicker code. Hold the WRD/Probe still and make sure that the screen brightness does not change. |
+| <img src="assets/status_led_green.svg" alt="GREEN" width="16"> **GREEN </br> 4x&nbsp;rapid&nbsp;flashing** | The pairing was successful. You can remove the WRD/Probe from the flicker code field and complete the pairing in the WRD/Client. |
+| <img src="assets/status_led_red.svg" alt="PURPLE" width="16"> **RED </br> 4x&nbsp;rapid&nbsp;flashing** | The pairing has failed. You can try again by pressing and holding the `user` button for 4 seconds. If the pairing fails several times, please try using a different PC for the pairing. |
 
 *Table 3: Meaning of the LED states in pairing mode*
 
@@ -494,9 +494,9 @@ The `user` button was pressed briefly.
 
 | LED STATUS | MEANING |
 | --- | --- |
-| <img src="assets/status_led_red.svg" alt="RED" width="16"> **RED > Shine permanently** | No connection to the mobile network has been established. Ensure that the antenna is connected correctly and that there is LTE-M coverage at the installation site (see **[coverage map on the WRD/Probe website](https://www.ssv-embedded.de/en/wrdprobe/#ltem)**). |
-| <img src="assets/status_led_yellow.svg" alt="PURPLE" width="16"> **YELLOW > Shine permanently** | There is a connection to the mobile network, but reception is weak. Ensure that the antenna is correctly connected and properly aligned. |
-| <img src="assets/status_led_green.svg" alt="PURPLE" width="16"> **GREEN > Shine permanently** | There is a good connection to the mobile phone network. |
+| <img src="assets/status_led_red.svg" alt="RED" width="16"> **RED </br> Shine&nbsp;permanently** | No connection to the mobile network has been established. Ensure that the antenna is connected correctly and that there is LTE-M coverage at the installation site (see **[coverage map on the WRD/Probe website](https://www.ssv-embedded.de/en/wrdprobe/#ltem)**). |
+| <img src="assets/status_led_yellow.svg" alt="PURPLE" width="16"> **YELLOW </br> Shine&nbsp;permanently** | There is a connection to the mobile network, but reception is weak. Ensure that the antenna is correctly connected and properly aligned. |
+| <img src="assets/status_led_green.svg" alt="PURPLE" width="16"> **GREEN </br> Shine&nbsp;permanently** | There is a good connection to the mobile phone network. |
 
 *Table 4: Meaning of the LED states for the LTE-M connection status*
 
