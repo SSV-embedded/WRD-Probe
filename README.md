@@ -51,7 +51,7 @@ The following equipment is required to work with the WRD/Probe:
     + an IDE like Eclipse or VSCode
     + a web browser (as UI for the **WRD/Client tool**)
 
-**[The WRD/Client tool can be downloaded from here: www.ssv-embedded.de/downloads/wrd-client-win.zip](https://www.ssv-embedded.de/downloads/wrd-client-win.zip).**
+[The WRD/Client tool can be downloaded from here: **https://www.ssv-embedded.de/downloads/wrd-client-win.zip**](https://www.ssv-embedded.de/downloads/wrd-client-win.zip).
 
 ## 1.3 Device Overview
 
