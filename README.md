@@ -1,3 +1,57 @@
+
+Skip to content
+GitLab
+
+    /
+
+    5
+    1
+    3
+    Help
+    wbu
+
+    W WBU Playground
+    Project information
+    Repository
+        Files
+        Commits
+        Branches
+        Tags
+        Contributor statistics
+        Graph
+        Compare revisions
+    Issues 0
+    Merge requests 1
+    CI/CD
+    Security and Compliance
+    Deployments
+    Packages and registries
+    Infrastructure
+    Monitor
+    Analytics
+    Wiki
+    Snippets
+    Settings
+
+Collapse sidebar
+
+    wbu
+    WBU Playground
+    Repository
+
+    wbu-playground
+    wrd
+    wrd_probe
+    README.md
+
+    wbu's avatar
+    Update README.md
+    wbu authored 3 minutes ago
+    4688d98c
+
+README.md
+26.08 KiB
+
 # WRD/PROBE: FIRST STEPS
 
 # 1. INTRODUCTION
@@ -9,11 +63,14 @@ The battery-operated WRD/Probe offers up to 12 months of battery life without re
 This creates a virtual debug cable. It uses common standards and provides a GDB interface that integrates seamlessly into your familiar integrated development environment (IDE) such as VSCode or Eclipse. Starting the build process, setting a breakpoint, inspecting variables etc. remains the same.
 
 And all this without compromising security: the WRD/Probe connects to your workstation via an encrypted end-to-end tunnel established with an out-of-band pairing with a flicker code
- 
-> :information_source: **Please note:**
->
-> This document refers to a workstation running on **Windows** with **[VSCode](https://code.visualstudio.com/)** as IDE. Our example target device is the cellular IoT prototyping platform **[Nordic Thingy:91](https://www.nordicsemi.com/Products/Development-hardware/Nordic-Thingy-91)**, which uses an **Arm Cortex-M33 CPU**. We offer a simple **[example project (blinky.zip) in the same repository as this document](blinky.zip)**, to flash the firmware of the Thingy:91.
 
+ 
+
+> :information_source: **Please note:**
+
+>
+
+> This document refers to a workstation running on **Windows** with **[VSCode](https://code.visualstudio.com/)** as IDE. Our example target device is the cellular IoT prototyping platform **[Nordic Thingy:91](https://www.nordicsemi.com/Products/Development-hardware/Nordic-Thingy-91)**, which uses an **Arm Cortex-M33 CPU**. We offer a simple **[example project (blinky.zip) in the same repository as this document](blinky.zip)**, to flash the firmware of the Thingy:91.
 
 <img src="assets/probe_schema.png" alt="The WRD/Probe connects target devices with an IDE" width="">
 
@@ -46,9 +103,13 @@ If anything is missing or defective, please contact our sales team: **sales@ssv-
 The following equipment is required to work with the WRD/Probe:
 
 + A workstation with
+
     + Linux or Windows (version 10 or higher)
+
     + an Internet connection
+
     + an IDE like Eclipse or VSCode
+
     + a web browser (as UI for the **WRD/Client tool**)
 
 [The WRD/Client tool can be downloaded from here: **https://www.ssv-embedded.de/downloads/wrd-client-win.zip**](https://www.ssv-embedded.de/downloads/wrd-client-win.zip).
@@ -64,10 +125,14 @@ The following equipment is required to work with the WRD/Probe:
 **Please read the following safety guidelines carefully! In case of property or personal damage by not paying attention to this document and/or by incorrect handling, we do not assume liability. In such cases any warranty claim expires.**
 
 > :warning: **ATTENTION!**
+
 >
+
 > **OBSERVE PRECAUTIONS FOR HANDLING – ELECTROSTATIC SENSITIVE DEVICE!**
 
 + **The device is for indoor use only!**
+
+7172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120121122123124125126127128129130131132133134135136137138139140
 + **Do not expose the device to extreme temperatures, direct sunlight, extreme humidity or moisture. Avoid condensation at any time.**
 + **Installation, repair or maintenance – especially opening the device! – must only be carried out by qualified personnel.**
 
@@ -89,13 +154,20 @@ Connect the provided LTE antenna to the SMA connector of the WRD/Probe.
 
 ## 3.3 Switching on the WRD/Probe
 
-Move the **power switch to the left** to power up the WRD/Probe. 
+Move the **power switch to the left** to power up the WRD/Probe. During the boot process, the **LED pulsates purple**. Once the WRD/Probe has finished booting up and is ready for operation, the **LED turns off**.
 
 > :bulb: **TIP!**
 >
-> For energy saving reasons, the **power LED remains off** even when the WRD/Probe is switched on. Simply press the **`user` button** to check whether the WRD/Probe is switched on. The LED will then flash green once.
+> For energy saving reasons, the **power LED remains off** even when the WRD/Probe is switched on. Simply press the **`user` button** to check whether the WRD/Probe is switched on. The LED will turn on and displays the LTE signal quality for 30 seconds (red = bad signal quality > try to adjust the antenna, yellow = medium signal quality, green = good signal quality).
+
 
 # 4. PAIRING A WORKSTATION
+
+> :information_source: **Please note:**
+>
+> If the WRD/Probe has been paired before, the old pairing is deleted once a new pairing process has been finished successfully. The WRD/Client holding the old pairing is not notified, thus the respective WRD/Probe panel is not updated anymore.
+
+Before starting the pairing process, ensure that the WRD/Probe has finished booting up (see chapter 3.3).
 
 In the WRD/Client click the **plus symbol** to add the WRD/Probe. Therefore the WRD/Client displays a **flicker code**.
 
@@ -130,7 +202,7 @@ After entering a name the following status information is displayed in the WRD/C
 **2: Name:** The name you gave the WRD/Probe and its **serial number** are displayed here. You can also see the **connection status** of the WRD/Probe. If the WRD/Probe is connected to the rendezvous server, a **green cloud icon** is displayed.
 
 **3: Time since last message:** The WRD/Probe automatically sends **every 5 minutes** current telemetry data. Pressing the `user` button also sends the current telemetry data. When you hover your mouse over the text, the exact time of the last message is displayed.
-
+141142143144145146147148149150151152153154155156157158159160161162163164165166167168169170171172173174175176177178179180181182183184185186187188189190191192193194195196197198199200201202203204205206207208209210
 **4: Current battery state & temperature:** This shows the current battery state as well as the internal temperature of the WRD/Probe. When you hover your mouse over the text, it will show whether the WRD/Probe is powered by the battery or via USB.
 
 **5: Current LTE-M signal strength:** The higher (less negative) the value in dBm, the stronger the radio signal. Important for range and capacity planning: Areas with **-100 dBm and worse** are usually considered to be the edge of the radio cell and only provide low data rates.
@@ -200,7 +272,7 @@ To enable the GDB server, simply click the **`GDB Server` switch**. The GDB serv
 *Figure 12: Enabling the GDB server*
 
 # 7. CONNECTING A TARGET DEVICE
-
+211212213214215216217218219220221222223224225226227228229230231232233234235236237238239240241242243244245246247248249250251252253254255256257258259260261262263264265266267268269270271272273274275276277278279280
 ## 7.1 Connecting a Target via UART
 
 There a different options of UART connections, depending on whether the target is supplied via the WRD/Probe or its own power source and whether the power consumption of the target is monitored or not.
@@ -270,7 +342,7 @@ To use the GDB protocol the workstation needs a GDB client. In this document we 
 > Our example target device is the cellular IoT prototyping platform **[Nordic Thingy:91](https://www.nordicsemi.com/Products/Development-hardware/Nordic-Thingy-91)**, which uses an **Arm Cortex-M33 CPU**. This document describes all necessary configurations of VSCode for this particular target device. If you want to configure VScode for other manufacturers/architectures please refer to the respective manufacturer/provider.
 
 ## 8.1 Configuration for Cortex-M Devices
-
+281282283284285286287288289290291292293294295296297298299300301302303304305306307308309310311312313314315316317318319320321322323324325326327328329330331332333334335336337338339340341342343344345346347348349350
 To support Cortex-M debugging in VScode, the **Cortex-M debugger** extension must be installed.
 
 To do this, open the **Extensions sidebar** in VSCode, search for **Cortex Debug**, and install the **Cortex-Debug** extension.
@@ -341,6 +413,7 @@ Open the `launch.json` and replace the current code with the following code:
               "interpreter-exec console \"set mem inaccessible-by-default off\"",
               "interpreter-exec console \"set remotetimeout 10\""
             ],
+351352353354355356357358359360361362363364365366367368369370371372373374375376377378379380381382383384385386387388389390391392393394395396397398399400401402403404405406407408409410411412413414415416417418419420
             "postLaunchCommands": [
               "interpreter-exec console \"load\"",
             ],
@@ -411,6 +484,7 @@ Now open the **Run and Debug** sidebar and click the green play button.
 <img src="assets/vscode_blinky_rundebug.png" alt="Rund and Debug sidebar with green play button" width="">
 
 *Figure 26: Run and Debug sidebar with green play button*
+421422423424425426427428429430431432433434435436437438439440441442443444445446447448449450451452453454455456457458459460461462463464465466467468469470471472473474475476477478479480481482483484485486487488489490
 
 > :information_source: **IMPORTANT!**
 >
@@ -481,6 +555,7 @@ The `user` button was pressed for 4 seconds.
 
 | LED STATUS | MEANING |
 | --- | --- |
+491492493494495496497498499500501502503504505506507508509510511512513514515516517
 | <img src="assets/status_led_cyan.svg" alt="BLUE" width="16"> **CYAN </br> Slowly&nbsp;pulsating** | The WRD/Probe searches for a flicker code. Hold the WRD/Probe with the photo transistor against the flicker code field on the screen. |
 | <img src="assets/status_led_cyan.svg" alt="GREEN" width="16"> **CYAN </br> Rapidly&nbsp;pulsating** | The WRD/Probe reads the flicker code. Keep the WRD/Probe on the field with the flicker code. Hold the WRD/Probe still and make sure that the screen brightness does not change. |
 | <img src="assets/status_led_green.svg" alt="GREEN" width="16"> **GREEN </br> 4x&nbsp;rapid&nbsp;flashing** | The pairing was successful. You can remove the WRD/Probe from the flicker code field and complete the pairing in the WRD/Client. |
@@ -506,4 +581,4 @@ The `user` button was pressed briefly.
 + [VSCode](https://code.visualstudio.com/)
 ---
 
-*author: wbu // review: bve // 02-2026 // rev. 1.0*
+*author: wbu // review: bve // 24-02-2026 // rev. 1.0*
