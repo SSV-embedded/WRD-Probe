@@ -118,7 +118,7 @@ Now hold the back side of the WRD/Probe with the foto transistor directly to the
 
 > :information_source: **Please note:**
 >
-> When the pairing process failed, the **LED flashes 4 times red**. You can try again by pressing and holding the `user` button for 4 seconds. If the pairing fails several times, please check the **LTE connection status** by briefly pressing the `user` button and observing the LED color as described in **[chapter 11.4](#114-status-request)**. You can also try using **a different PC** for the pairing.
+> When the pairing process failed, the **LED flashes 4 times red**. You can try again by pressing and holding the `user` button for 4 seconds. If the pairing fails several times, please check the **LTE connection status** by briefly pressing the `user` button and observing the LED color as described in **[chapter 11.4](#114-lte-m-connection-status)**. You can also try using **a different PC** for the pairing.
 
 <img src="assets/client_name.png" alt="Enter a name for the WRD/Probe" width="960">
 
@@ -218,7 +218,7 @@ There a different options of UART connections, depending on whether the target i
 
 > :information_source: **IMPORTANT!**
 >
-> Please be sure to comply with the **absolute maximum ratings** described in the [**hardware reference (PDF)**](https://ssv-embedded.de/wrdprobe) in **chapter 6.1.2**.
+> Please be sure to comply with the **absolute maximum ratings** described in the [**hardware reference (PDF)**](https://ssv-embedded.de/doks/manuals/hr_wrd_probe_en.pdf) in **chapter 6.1.2**.
 
 ---
 
@@ -497,13 +497,13 @@ The `user` button was pressed for 4 seconds.
 
 ## 11.4 LTE-M Connection Status
 
-The `user` button was pressed briefly.
+When the `user` button is pressed briefly, the LED indicates the current signal strength of the mobile network connection for 30 seconds. During this time, the LED color may gradually change between red, yellow, and green, depending on whether the signal strength is changing. 
 
 | LED STATUS | MEANING |
 | --- | --- |
-| <img src="assets/status_led_red.svg" alt="RED" width="16"> **RED </br> Shine&nbsp;permanently** | No connection to the mobile network has been established. Ensure that the antenna is connected correctly and that there is LTE-M coverage at the installation site (see **[coverage map on the WRD/Probe website](https://www.ssv-embedded.de/en/wrdprobe/#ltem)**). |
-| <img src="assets/status_led_yellow.svg" alt="PURPLE" width="16"> **YELLOW </br> Shine&nbsp;permanently** | There is a connection to the mobile network, but reception is weak. Ensure that the antenna is correctly connected and properly aligned. |
-| <img src="assets/status_led_green.svg" alt="PURPLE" width="16"> **GREEN </br> Shine&nbsp;permanently** | There is a good connection to the mobile phone network. |
+| <img src="assets/status_led_red.svg" alt="RED" width="16"> **RED </br> Shining&nbsp;up&nbsp;to&nbsp;30&nbsp;s** | No connection to the mobile network has been established. Ensure that the antenna is connected correctly and that there is LTE-M coverage at the installation site (see **[coverage map on the WRD/Probe website](https://www.ssv-embedded.de/en/wrdprobe/#ltem)**). |
+| <img src="assets/status_led_yellow.svg" alt="PURPLE" width="16"> **YELLOW </br> Shining&nbsp;up&nbsp;to&nbsp;30&nbsp;s** | There is a connection to the mobile network, but reception is weak. Ensure that the antenna is correctly connected and properly aligned. |
+| <img src="assets/status_led_green.svg" alt="PURPLE" width="16"> **GREEN </br> Shining&nbsp;up&nbsp;to&nbsp;30&nbsp;s** | There is a good connection to the mobile phone network. |
 
 *Table 4: Meaning of the LED states for the LTE-M connection status*
 
@@ -513,4 +513,4 @@ The `user` button was pressed briefly.
 + [VSCode](https://code.visualstudio.com/)
 ---
 
-*author: wbu // review: bve // 24-02-2026 // rev. 1.0*
+*author: wbu // review: bvj // 25-02-2026 // rev. 1.0*
