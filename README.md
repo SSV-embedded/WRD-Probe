@@ -1,4 +1,5 @@
 # WRD/PROBE: FIRST STEPS
+<img src="assets/github_wrdprobe.png" alt="The WRD/Probe" width="">
 
 # 1. INTRODUCTION
 
