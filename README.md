@@ -47,7 +47,7 @@ If anything is missing or defective, please contact our sales team: **sales@ssv-
 The following equipment is required to work with the WRD/Probe:
 
 + A workstation with
-    + Linux or Windows (version 10 or higher)
+    + Linux, macOS or Windows (version 10 or higher)
     + an Internet connection
     + an IDE like Eclipse or VSCode
     + a web browser (as UI for the **WRD/Client tool**)
@@ -76,7 +76,11 @@ The following equipment is required to work with the WRD/Probe:
 
 ## 3.1 Starting the WRD/Client
 
-Download the **[WRD/Client](https://www.ssv-embedded.de/downloads/wrd-client-win.zip)**, unpack the ZIP file and execute the `client.bat`.
+Download the **[WRD/Client](https://www.ssv-embedded.de/downloads/wrd-client-win.zip)**, unpack the ZIP file.
+
+On Windows execute the `client.bat`.
+
+On Linux or macOS, manually install the [Node.js runtime](https://nodejs.org/en/download) and run `node app.mjs` from the directory containing `client.bat` to start the client.
 
 Then start a browser and open the address `localhost:8080` to display the user interface of the WRD/Client.
 
