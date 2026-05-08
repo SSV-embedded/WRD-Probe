@@ -80,7 +80,7 @@ Download the **[WRD/Client](https://www.ssv-embedded.de/downloads/wrd-client-win
 
 On Windows execute the `client.bat`.
 
-On Linux or macOS, manually install the [Node.js runtime](https://nodejs.org/en/download) and run `node app.mjs` from the directory containing `client.bat` to start the client.
+On Linux or macOS, manually install the [Node.js runtime](https://nodejs.org/en/download) (version 22 or later) and run `node app.mjs` from the directory containing `client.bat` to start the client.
 
 Then start a browser and open the address `localhost:8080` to display the user interface of the WRD/Client.
 
