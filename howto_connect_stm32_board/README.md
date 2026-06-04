@@ -1,12 +1,12 @@
 # WRD/PROBE HOW TO
 
-## Connecting an STM32 NUCLEO-WL55JC2
+## Connecting an STM32 NUCLEO-WL55JC1
 
-<img src="assets/stm_board_top_frei.png" alt="STM32 NUCLEO-WL55JC2" width="480">
+<img src="assets/stm_board_top_frei.png" alt="STM32 NUCLEO-WL55JC1" width="480">
 
 # 1. INTRODUCTION
 
-This document describes how to connect the **STM32 NUCLEO-WL55JC2** evaluation board to the **WRD/Probe** for external 3.3 V power supply, power monitoring, UART communication and debugging.
+This document describes how to connect the **STM32 NUCLEO-WL55JC1** evaluation board to the **WRD/Probe** for external 3.3 V power supply, power monitoring, UART communication and debugging.
 
 ## 1.1 Required Equipment
 
@@ -19,7 +19,7 @@ The following equipment is required to work with the WRD/Probe:
 
 # 2. PREPARATIONS
 
-## 2.1 Prepare the STM32 NUCLEO-WL55JC2
+## 2.1 Prepare the STM32 NUCLEO-WL55JC1
 
 Set the following jumpers:
 
@@ -47,13 +47,13 @@ Set a jumper on **3.3V and Imon In** of the UART interface.
 
 ## 3.1 Power Supply via WRD/Probe
 
-The NUCLEO-WL55JC2 is powered externally with **3.3 V** via the WRD/Probe. The current can be monitored through the **Imon** path.
+The NUCLEO-WL55JC1 is powered externally with **3.3 V** via the WRD/Probe. The current can be monitored through the **Imon** path.
 
 See also **[section 7.1.5: Target with Power Supply via WRD/Probe @3.3 V and Power Monitoring](https://github.com/SSV-embedded/WRD-Probe/blob/main/README.md#715-target-with-power-supply-via-wrdprobe-33-v-and-power-monitoring)** in the WRD/Probe First Steps.
 
 Connect the power lines with jumper cables:
 
-| WRD/Probe | NUCLEO-WL55JC2           | Function     |
+| WRD/Probe | NUCLEO-WL55JC1           | Function     |
 | --------- | ------------------------ | ------------ |
 | Imon Out  | CN7 Pin 16               | 3.3 V supply |
 | GND       | CN7 Pin 20 or CN7 Pin 22 | Ground       |
@@ -66,9 +66,9 @@ Connect the power lines with jumper cables:
 
 ## 3.2 UART Connection
 
-Connect UART between WRD/Probe and NUCLEO-WL55JC2 with jumper cables.
+Connect UART between WRD/Probe and NUCLEO-WL55JC1 with jumper cables.
 
-| WRD/Probe | NUCLEO-WL55JC2    |
+| WRD/Probe | NUCLEO-WL55JC1    |
 | --------- | ------------------|
 | RXD       | CN10 Pin 35 (TXD) |
 | TXD       | CN10 Pin 37 (RXD) |
@@ -77,7 +77,7 @@ Connect UART between WRD/Probe and NUCLEO-WL55JC2 with jumper cables.
 
 Set the UART voltage level to **3.3 V**:
 
-| WRD/Probe | NUCLEO-WL55JC2      |
+| WRD/Probe | NUCLEO-WL55JC1      |
 | --------- | --------------------|
 | VTuart    | CN7 Pin 5 (VDD_MCU) |
 
@@ -89,10 +89,10 @@ Set the UART voltage level to **3.3 V**:
 
 ## 3.3 Debug Connection
 
-+ On the NUCLEO-WL55JC2 remove all jumpers from **JP8**.
-+ Connect the **Cortex-M adapter cable** to the **Multi-ICE** interface of WRD/Probe and to **CN16** of the NUCLEO-WL55JC2
++ On the NUCLEO-WL55JC1 remove all jumpers from **JP8**.
++ Connect the **Cortex-M adapter cable** to the **Multi-ICE** interface of WRD/Probe and to **CN16** of the NUCLEO-WL55JC1
 
-| WRD/Probe              | NUCLEO-WL55JC2 |
+| WRD/Probe              | NUCLEO-WL55JC1 |
 | ---------------------- | -------------- |
 | Multi-ICE interface    | CN16           |
 
